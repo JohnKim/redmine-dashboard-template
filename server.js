@@ -11,9 +11,7 @@ console.log(process.env.REDMINE_HOST, { apiKey: process.env.REDMINE_APIKEY });
 var redmine = new Redmine(process.env.REDMINE_HOST, { apiKey: process.env.REDMINE_APIKEY });
 
 var redmineApi = (resource, parameter, callback) => {
-  console.log(resource, parameter);
   redmine[resource](parameter, (err, data) => {
-    console.log(err, data);
     if (err) callback(err);
     callback(data);
   });
@@ -39,6 +37,6 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 9000);
+app.listen(process.env.PORT || 3000);
 // Add more page reqeust mappers
 // . . . . . .
