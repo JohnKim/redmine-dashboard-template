@@ -1,0 +1,16 @@
+{
+  "name": "redmine-dashboard",
+  "version": "1.0.0",
+  "description": "Readmind Dashboard Template for development",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "express-hbs": "^1.0.4",
+    "node-redmine": "^0.1.5"
+  }
+}
